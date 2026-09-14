@@ -134,6 +134,8 @@ CI runs the test suite, lint, and Docker image builds automatically on every pus
 - Scanned/image-only PDFs won't yield extractable text; use a text-based export instead.
 - The FAISS store here is local-disk and per-instance; for a multi-instance production deployment, swap in a managed vector DB (OpenSearch, pgvector, Pinecone) — `vector_store.py`'s `add_resume`/`query` functions are the only integration surface the rest of the app depends on.
 
+---
+
 ## 👤 Author
 **Chowdri Furkhan** — [GitHub](https://github.com/Chowdri-Furkhan07)
 
