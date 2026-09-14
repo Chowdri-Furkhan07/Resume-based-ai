@@ -141,5 +141,7 @@ CI runs the test suite, lint, and Docker image builds automatically on every pus
 ## 👤 Author
 **Chowdri Furkhan** — [GitHub](https://github.com/Chowdri-Furkhan07)
 
+---
+
 ## 📄 License
 No license file is currently included in this repository — add one (e.g. MIT) if you intend for others to reuse this code.
