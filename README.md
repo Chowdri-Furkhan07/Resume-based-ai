@@ -129,6 +129,8 @@ CI runs the test suite, lint, and Docker image builds automatically on every pus
 |---|---|
 | ![Upload](Screenshots/Upload_Resume&Indexed.png) | ![Results](Screenshots/Results.png) |
 
+---
+
 ## ⚠️ Notes
 - API-key auth (`REQUIRE_API_KEY`) is a minimal shared-secret check meant for keeping a demo deployment from being wide open — swap it for real OAuth2/JWT auth for multi-tenant production use.
 - Scanned/image-only PDFs won't yield extractable text; use a text-based export instead.
