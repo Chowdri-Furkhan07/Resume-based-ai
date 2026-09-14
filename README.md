@@ -1,6 +1,6 @@
 # 💼 Resume RAG Career Assistant
 
-A retrieval-augmented Q&A web app that lets you upload your resume and ask career questions grounded in that document — powered by **AWS Bedrock** (Llama 3 + Titan Embeddings) and **FAISS**.
+A retrieval-augmented Q&A web app that lets you upload your resume and ask career questions grounded in that document - powered by **AWS Bedrock** (Llama 3 + Titan Embeddings) and **FAISS**.
 
 Upload a resume → the backend chunks and embeds it into a per-user FAISS vector index → ask a career question → the app retrieves the most relevant chunks and asks an LLM to answer using only that context.
 
