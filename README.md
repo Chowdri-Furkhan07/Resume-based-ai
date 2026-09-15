@@ -12,7 +12,7 @@ Upload a resume → the backend chunks and embeds it into a per-user FAISS vecto
 
 - **Resume upload & indexing** - accepts `.pdf`, `.docx`, and `.txt` resumes, extracts text, and chunks it with `RecursiveCharacterTextSplitter`.
 - **Per-user isolated vector stores** - each `user_id` gets its own FAISS index on disk (keyed by a SHA-256 hash of the user ID), so one user's resume data can never leak into another's search results.
-- **Retrieval-augmented answers** — questions are answered by Meta's **Llama 3 70B Instruct** on Bedrock, grounded strictly in the retrieved resume chunks (Titan Text Embeddings for the vector search).
+- **Retrieval-augmented answers** - questions are answered by Meta's **Llama 3 70B Instruct** on Bedrock, grounded strictly in the retrieved resume chunks (Titan Text Embeddings for the vector search).
 - **FastAPI backend** with a clean service-layer architecture (routers → services → Bedrock/FAISS), a custom exception hierarchy, structured logging, and configurable CORS.
 - **Streamlit frontend** — a simple two-pane UI: upload your resume on the left, chat about your career on the right.
 - **Optional API-key auth**, health-check endpoint, and Docker healthchecks for both services.
